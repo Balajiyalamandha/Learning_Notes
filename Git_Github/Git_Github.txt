@@ -1,0 +1,21 @@
+git init
+git add .
+git commit -m "commit the changes"
+git push
+git branch
+git status
+git log
+git remote -v
+git remote add main https://github.com/Balajiyalamandha/Learning_Notes.git
+git pull
+git clone
+git log --oneline --graph --decorate --all   -----Branch structure, Merges, Release flow
+git show e823250         ----  Show detailed commit 
+git blame filename      ----- who changed what  & Used during production bug analysis
+git log -S "functionName"    -------- Finds when code was introduced or removed.
+git checkout -b hotfix/login-issue e823250   -------Create branch from specific commit
+git branch -d Methods          ------Delete merged branch safely     branch Methods (was 3116d16).
+git branch -D variables      ------- Force delete         deleted branch variables (was e823250).
+git branch -m old-name new-name   ---------------   Rename branch 
+git rebase main       --------------- Used instead of merge to keep history linear.
+git rebase -i HEAD~3

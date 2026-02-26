@@ -19,3 +19,17 @@ git branch -D variables      ------- Force delete         deleted branch variabl
 git branch -m old-name new-name   ---------------   Rename branch 
 git rebase main       --------------- Used instead of merge to keep history linear.
 git rebase -i HEAD~3
+
+
+git rm git
+git rm main
+git commit -m "Remove unwanted files"
+git push origin main
+
+
+git add .gitignore
+git commit -m "Add gitignore"
+git push
+
+.gitignore     ---------It prevents unwanted files from being committed to your Git project
+type nul > .gitignore  ------------This creates an empty .gitignore file in your current directory.

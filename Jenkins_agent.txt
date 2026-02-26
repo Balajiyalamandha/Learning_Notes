@@ -1,0 +1,120 @@
+Yes ✅ — you can run Jenkins on another Windows machine using:
+
+```
+http://192.168.0.84:8080/
+```
+
+But it depends on what you want:
+
+---
+
+# ✅ Case 1: Access Jenkins UI from another Windows system
+
+If Jenkins is running on **192.168.0.84**, then from another PC on the same network:
+
+1. Open a browser
+2. Enter:
+
+```
+http://192.168.0.84:8080/
+```
+
+If it doesn't open, check:
+
+### 🔹 On the Jenkins machine (192.168.0.84):
+
+* Jenkins service is running
+* Windows Firewall allows port **8080**
+* You can test by running:
+
+  ```
+  netstat -ano | findstr 8080
+  ```
+
+If firewall is blocking:
+
+* Open **Windows Defender Firewall**
+* Add **Inbound Rule**
+* Allow TCP port **8080**
+
+---
+
+# ✅ Case 2: Run Jenkins Agent on another Windows Machine
+
+If you want another Windows system to run builds (agent):
+
+### Step 1: On second Windows machine
+
+* Install Java
+* Create folder:
+
+  ```
+  C:\Jenkins\workspace
+  ```
+
+### Step 2: In Jenkins Master (192.168.0.84)
+
+* Go to:
+  **Manage Jenkins → Manage Nodes and Clouds → New Node**
+* Create node (e.g., `Windows-Agent2`)
+* Set:
+
+  * Remote root directory → `C:\Jenkins\workspace`
+  * Launch method → Launch agent via WebSocket
+
+### Step 3: On second machine, run:
+
+```bash
+java -jar agent.jar -url http://192.168.0.84:8080/ -secret <secret> -name Windows-Agent2 -webSocket -workDir "C:\Jenkins\workspace"
+```
+
+If connected successfully, you will see:
+
+```
+WebSocket connection open
+Connected
+```
+
+---
+
+# 🚨 Important Things to Check
+
+If it doesn’t connect:
+
+### 1️⃣ Same Network?
+
+Both systems must be on same LAN (same WiFi/router).
+
+### 2️⃣ Firewall
+
+On Jenkins machine (192.168.0.84):
+
+* Allow port 8080 in firewall.
+
+### 3️⃣ Jenkins URL Configuration
+
+Go to:
+
+```
+Manage Jenkins → Configure System
+```
+
+Set Jenkins URL to:
+
+```
+http://192.168.0.84:8080/
+```
+
+---
+
+# 🎯 Final Answer
+
+Yes — you can:
+
+* Access Jenkins UI from other Windows systems
+* Run builds on other Windows systems as agents
+* Run parallel jobs across multiple machines
+
+---
+
+If you want, I can give you a **quick checklist to test connection between two Windows machines step-by-step**.

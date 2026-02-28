@@ -1,0 +1,60 @@
+                        ┌──────────────┐
+                        │    main      │  <- Production-ready code
+                        └─────┬────────┘
+                              │
+                        Merge fixes / hotfixes
+                              │
+                        ┌─────┴────────┐
+                        │   develop    │  <- Pre-release integration branch
+                        └─────┬────────┘
+                              │
+          ┌───────────────────┼─────────────────────┐
+          │                   │                     │
+          ▼                   ▼                     ▼
+ ┌─────────────────┐   ┌─────────────────┐   ┌─────────────────┐
+ │ feature/login   │   │ feature/payment │   │ feature/checkout│
+ │ -tests branch   │   │ -tests branch   │   │ -tests branch   │
+ └───────┬─────────┘   └───────┬─────────┘   └───────┬─────────┘
+         │                     │                     │
+   git push origin        git push origin       git push origin
+         │                     │                     │
+         ▼                     ▼                     ▼
+ ┌─────────────────────────────────────────────────────────┐
+ │                    CI/CD Pipeline                        │
+ │  - Run automation scripts (unit, integration, regression)│
+ │  - Generate test reports                                 │
+ │  - Notify QA/Dev teams                                    │
+ └─────────────────────────────────────────────────────────┘
+         │
+         ▼
+ ┌─────────────────┐
+ │  Merge to develop│
+ │  after tests pass│
+ └───────┬─────────┘
+         │
+         ▼
+ ┌─────────────────┐
+ │ release/2.4     │ <- Candidate QA/Staging branch
+ └───────┬─────────┘
+         │
+         ▼
+ ┌───────────────────────────────┐
+ │  Full regression automation    │
+ │  Triggered by CI/CD pipeline  │
+ └───────┬───────────────────────┘
+         │
+         ▼
+ ┌─────────────────┐
+ │ Tag release v2.4 │ <- Triggers production/staging deploy
+ └─────────────────┘
+         │
+         ▼
+ ┌─────────────────┐
+ │  Hotfix branch  │ <- Critical fix if pipeline/test fails
+ └─────────────────┘
+         │
+         ▼
+ ┌─────────────────┐
+ │ Merge hotfix to │
+ │ main & develop  │
+ └─────────────────┘

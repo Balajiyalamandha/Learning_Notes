@@ -1,0 +1,64 @@
+
+Configuring user information used across all local repositories
+
+git version                                            ----- Checks the installed version of Git.
+git config --global user.name “[firstname lastname]”   ----- Sets your identity for all commits
+git config --global user.email “[valid-email]”         ----- Sets your email address (must match your GitHub/GitLab email).
+
+git config --global color.ui auto                      ----- Enables helpful color highlighting in the terminal.
+git config --list                                      ----- Lists all configuration settings currently applied
+-------------
+
+git init                                                          ----- Initializes a new, empty Git repository in the current folder.
+git clone https://github.com/Balajiyalamandha/Learning_Notes.git  -----  Downloads an existing repository from a remote server (like GitHub).
+git add .                          ------ Adds all changed files in the current directory to staging.
+git add Git_Github.txt             ------ Adds a specific file to the staging area.
+git commit -am "Variables"         ------ Shortcuts git add . and git commit in one command (tracked files only).
+git commit -m "commit the changes" ------ Records the snapshot with a message.
+git commit --amend                 ------ Modifies the last commit (useful to fix a typo in the message).
+--------------------
+
+Remote Syncing
+git remote -v                       ----- Lists all remote repositories linked to your local project.
+git remote add main https://github.com/Balajiyalamandha/Learning_Notes.git   ---- Connects your local repo to a remote server.
+git remote remove https://github.com/Balajiyalamandha/Learning_Notes.git     ---- Removes a remote connection.
+git fetch	                 ---- Downloads changes from the remote but does not update your code.
+git pull                     ---- Downloads changes and immediately merges them (Fetch + Merge).
+git push -u origin main      ---- Uploads your commits to the remote branch.
+git push --tags              ---- Pushes specific version tags to the remote.
+git push --force	         ---- Dangerous. Overwrites remote history with your local history.
+--------------------
+
+Inspection & Comparison
+When things break, you need to investigate the history.
+
+git log            ----	Shows the full commit history.
+git log            ---- oneline	Condensed history (one line per commit).
+git log --graph	   ---- Shows a text-based graph of branching history.
+git diff           ---- Shows differences between working directory and staging area.
+git diff --staged  ----	Shows differences between staging area and the last commit.
+git blame <file>   ---- Shows who modified each line of a file and when.
+git show  e823250  ---- Shows the specific changes (metadata + diff) of a commit.
+---------
+
+git pull
+git push                           ------
+git branch                         ------
+git status                         ------ Crucial. Shows which files are modified, staged, or untracked.
+git log                            ------
+git log --oneline --graph --decorate --all   -----  Branch structure, Merges, Release flow
+git show e823250                             -----  Show detailed commit 
+git blame filename                           -----  who changed what  & Used during production bug analysis
+git log -S "functionName"                    -----  Finds when code was introduced or removed.
+git checkout -b hotfix/login-issue e823250   -----  Create branch from specific commit
+git branch -d Methods                        -----  Delete merged branch safely     branch Methods (was 3116d16).
+git branch -D variables                      -----  Force delete         deleted branch variables (was e823250).
+git branch -m old-name new-name              -----  Rename branch 
+git rebase main                              -----  Used instead of merge to keep history linear.
+git rebase -i HEAD~3                         -----  
+git rm git                                   -----  Deletes a file from both the working directory and the index.
+git rm --cached filename.txt                 -----  Removes a file from Git tracking but keeps it on your local disk.                              
+git commit -m "Remove unwanted files"        -----  
+git push origin main                         -----  
+.gitignore                                   -----  It prevents unwanted files from being committed to your Git project
+type nul > .gitignore                        -----  This creates an empty .gitignore file in your current directory.

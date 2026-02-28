@@ -1,0 +1,437 @@
+Perfect — here is your **30-Day Java Plan for Automation Testing**.
+Follow this daily (2–3 hrs/day). If you actually code every day, you’ll be job-ready in Java.
+
+---
+
+# 🚀 30-Day Java Learning Plan (Automation Focus)
+
+## 🟢 WEEK 1 — Java Basics (Foundation)
+
+### 📅 Day 1
+
+* Install JDK & IDE (IntelliJ/Eclipse)
+* Write first program: Hello World
+* Understand:
+
+  * JDK vs JRE vs JVM
+  * main() method
+
+✅ Practice:
+
+* Print name, city, experience
+
+---
+
+### 📅 Day 2
+
+**Variables & Data Types**
+
+* int, double, char, boolean, String
+* Declaration vs initialization
+
+✅ Programs:
+
+* Swap two numbers
+* Simple interest calculator
+* Area of rectangle
+
+---
+
+### 📅 Day 3
+
+**Operators**
+
+* Arithmetic
+* Relational
+* Logical
+* Assignment
+
+✅ Programs:
+
+* Check even/odd
+* Largest of 3 numbers
+* Eligible for voting
+
+---
+
+### 📅 Day 4
+
+**If–Else**
+
+* if
+* if–else
+* nested if
+
+✅ Programs:
+
+* Grade calculator
+* Login validation (username/password)
+* Positive/negative number
+
+---
+
+### 📅 Day 5
+
+**Loops — Part 1**
+
+* for loop
+* while loop
+
+✅ Programs:
+
+* Print 1 to 100
+* Sum of numbers
+* Multiplication table
+
+---
+
+### 📅 Day 6
+
+**Loops — Part 2**
+
+* do–while
+* nested loops
+
+✅ Programs:
+
+* Reverse number
+* Count digits
+* Pattern printing (stars)
+
+---
+
+### 📅 Day 7
+
+**Methods (VERY IMPORTANT)**
+
+* Method syntax
+* Parameters
+* Return type
+
+✅ Programs:
+
+* Method for addition
+* Method for factorial
+* Method for login validation
+
+🎯 **Checkpoint 1:** You should write small programs without help.
+
+---
+
+# 🟡 WEEK 2 — OOP (INTERVIEW GOLD)
+
+---
+
+### 📅 Day 8
+
+**Class & Object**
+
+✅ Programs:
+
+* Create Employee class
+* Create Car class
+* Access variables using object
+
+---
+
+### 📅 Day 9
+
+**Constructors**
+
+* Default constructor
+* Parameterized constructor
+
+✅ Programs:
+
+* Student details using constructor
+
+---
+
+### 📅 Day 10
+
+**Encapsulation**
+
+* private variables
+* getters/setters
+
+✅ Program:
+
+* Bank account example
+
+⭐ Interview favorite topic.
+
+---
+
+### 📅 Day 11
+
+**Inheritance**
+
+* single inheritance
+* super keyword
+
+✅ Programs:
+
+* Animal → Dog
+* Vehicle → Car
+
+---
+
+### 📅 Day 12
+
+**Polymorphism**
+
+* Method overloading
+* Method overriding
+
+✅ Programs:
+
+* Calculator (overloading)
+* Parent/Child override example
+
+🔥 Very important for interviews.
+
+---
+
+### 📅 Day 13
+
+**Abstraction**
+
+* abstract class
+* interface
+
+✅ Programs:
+
+* Shape interface
+* Abstract payment example
+
+---
+
+### 📅 Day 14
+
+🧪 **OOP Mini Project**
+
+Build:
+
+* Employee management mini program
+
+🎯 **Checkpoint 2:** You should confidently explain all OOP concepts.
+
+---
+
+# 🔵 WEEK 3 — Collections (Automation Must)
+
+---
+
+### 📅 Day 15
+
+**ArrayList**
+
+* add(), remove(), get()
+* iteration
+
+✅ Programs:
+
+* Store employee names
+* Print list
+
+---
+
+### 📅 Day 16
+
+**List Advanced**
+
+* Iterator
+* for-each loop
+
+✅ Programs:
+
+* Remove duplicates from list
+
+---
+
+### 📅 Day 17
+
+**Set (HashSet)**
+
+* uniqueness
+* no duplicates
+
+✅ Programs:
+
+* Remove duplicates from array
+
+---
+
+### 📅 Day 18
+
+**Map (HashMap)**
+
+🔥 VERY IMPORTANT FOR AUTOMATION
+
+* put(), get(), keySet()
+
+✅ Programs:
+
+* Store username/password
+* Print key-value pairs
+
+---
+
+### 📅 Day 19
+
+**Collections Practice Day**
+
+Solve at least 5 problems mixing List, Set, Map.
+
+🎯 **Checkpoint 3:** Comfortable using collections.
+
+---
+
+# 🟣 WEEK 4 — Automation Support Topics
+
+---
+
+### 📅 Day 20
+
+**String Handling — Part 1**
+
+* length()
+* equals()
+* contains()
+* substring()
+
+✅ Programs:
+
+* Reverse string
+* Palindrome string
+
+---
+
+### 📅 Day 21
+
+**String Handling — Part 2**
+
+* split()
+* replace()
+* trim()
+
+✅ Programs:
+
+* Count words
+* Remove spaces
+
+---
+
+### 📅 Day 22
+
+**Exception Handling**
+
+* try–catch
+* finally
+* throw/throws
+
+✅ Programs:
+
+* Handle divide by zero
+* Custom exception example
+
+⭐ Automation uses this heavily.
+
+---
+
+### 📅 Day 23
+
+**File Handling — Basic**
+
+* FileReader
+* BufferedReader
+* Read text file
+
+✅ Program:
+
+* Read data from file and print
+
+---
+
+### 📅 Day 24
+
+**File Writing**
+
+* FileWriter
+* BufferedWriter
+
+✅ Program:
+
+* Write test data into file
+
+---
+
+### 📅 Day 25
+
+🧪 **Mini Automation Utility**
+
+Build:
+
+* Read username/password from file
+* Validate login using method
+
+🔥 This is real automation prep.
+
+---
+
+### 📅 Day 26–28
+
+**Revision + Coding Practice**
+
+* Redo weak topics
+* Solve 10 coding problems
+* Practice OOP explanations
+
+---
+
+### 📅 Day 29
+
+🧪 **Final Mini Project**
+
+Build small console app using:
+
+* OOP
+* Collections
+* Exception handling
+* File handling
+
+---
+
+### 📅 Day 30
+
+🎯 **Self-Assessment**
+
+You are ready if you can:
+
+* Write programs without Google
+* Explain OOP clearly
+* Use ArrayList & HashMap
+* Handle exceptions
+* Read from file
+
+---
+
+# 🏆 After This → Next Step
+
+Immediately start:
+
+👉 Selenium WebDriver
+👉 TestNG
+👉 Framework
+
+---
+
+## 💬 Want me to accelerate you?
+
+Say one:
+
+* **“Give me daily Java programs”**
+* **“Start Selenium roadmap”**
+* **“Give me OOP interview questions”**
+
+I’ll guide you step-by-step.
